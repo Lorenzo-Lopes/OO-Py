@@ -10,5 +10,8 @@ def main():
     Livro.listar_livros()
     sr_aneis.emprestar()
 
+    ano_publicacao = int(input("Informe o ano do livro que deseja alugar: "))
+    Livro.verificar_disponibilidade(ano_publicacao)
+
 if __name__ == '__main__':
     main()
