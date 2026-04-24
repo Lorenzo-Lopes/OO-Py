@@ -24,3 +24,12 @@ class Livro:
         return print(f'O titulo: {self._titulo} Não estar dispponivel no momento.')
 
     
+    '''Adicione um método estático chamado verificar_disponibilidade à classe Livro que recebe um ano como parâmetro e retorna uma lista dos livros disponíveis publicados nesse ano.
+    '''
+    @classmethod
+    def verificar_disponibilidade(cls,ano_publicacao):
+        print("\nOs livros disponiveis para emprestar são : \n")
+        for livro in cls.livros:
+            if livro._ano_publicacao == ano_publicacao and livro._disponivel:
+                print(f'Livro: {livro._titulo}, escrito por: {livro._autor}.')
+                
