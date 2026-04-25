@@ -1,4 +1,4 @@
-from modelos.restaurante import Restaurante
+from Introducao.modelos.restaurante import Restaurante
 
 restaurante_praça = Restaurante('praça','Gourmet')
 restaurante_mexicano = Restaurante('mexican food','Mexicana')

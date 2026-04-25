@@ -1,4 +1,4 @@
-from modelos.avaliacao import Avaliacao
+from Introducao.modelos.avaliacao import Avaliacao
 from modelos.cardapio.item_cardapio import Item_cardapio
 
 class Restaurante:
